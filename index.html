@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d2b">
+<title>Untuk Aa Pangeran Kecilku 💗</title>
+<style>
+:root {
+  --night: #090b20;
+  --purple: #211947;
+  --pink: #ffb7d5;
+  --pink2: #ff82b6;
+  --cream: #fff5fb;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  background: radial-gradient(ellipse at top, #30245c 0%, #11102d 48%, #070918 100%);
+  overflow-x: hidden;
+}
+#stars, #hearts { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+#stars {
+  opacity: .75;
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, #fff 45%, transparent 55%),
+    radial-gradient(1px 1px at 75% 12%, #fff 45%, transparent 55%),
+    radial-gradient(2px 2px at 48% 36%, #ffe3f0 45%, transparent 55%),
+    radial-gradient(1px 1px at 90% 70%, #fff 45%, transparent 55%),
+    radial-gradient(2px 2px at 24% 82%, #fff 45%, transparent 55%);
+  background-size: 210px 190px;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+@keyframes twinkle { from { opacity: .35; } to { opacity: .95; } }
+main { position: relative; z-index: 1; }
+section { padding: 76px 20px; }
+.hero {
+  min-height: 100svh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
+  padding-top: 54px;
+}
+.eyebrow {
+  color: #e5d7ff; letter-spacing: .19em; font: 11px/1.8 Arial, sans-serif;
+  text-transform: uppercase;
+}
+.moon { font-size: 42px; margin-bottom: 8px; filter: drop-shadow(0 0 16px #ffe4a8); }
+h1 {
+  color: var(--pink); font-size: clamp(36px, 9vw, 70px);
+  font-weight: normal; line-height: 1.12; margin: 18px 0;
+  text-shadow: 0 0 24px #ff82b655;
+}
+h2 { color: var(--pink); font-size: clamp(25px, 6vw, 38px); font-weight: normal; }
+p { font-size: 17px; line-height: 1.9; }
+.hero p { max-width: 520px; }
+button, .button {
+  display: inline-block; border: 0; border-radius: 999px; padding: 15px 24px;
+  margin: 12px 5px; background: linear-gradient(120deg, var(--pink), #ffd5e7);
+  color: #32163c; font-size: 15px; font-weight: bold; cursor: pointer;
+  text-decoration: none; box-shadow: 0 8px 30px #ff82b633;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+button:hover, .button:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 35px #ff82b655; }
+.panel {
+  max-width: 760px; margin: 0 auto; padding: clamp(23px, 5vw, 44px);
+  border: 1px solid #ffb7d555; border-radius: 25px;
+  background: linear-gradient(145deg, #ffffff12, #ffffff06);
+  box-shadow: 0 18px 70px #00000024; backdrop-filter: blur(8px);
+}
+.hidden { display: none !important; }
+.center { text-align: center; }
+.signature { color: var(--pink); font-style: italic; }
+.divider { color: var(--pink); letter-spacing: .7em; text-align: center; margin: 28px 0; }
+.big-heart { font-size: 36px; animation: heartbeat 1.6s infinite; display: inline-block; }
+@keyframes heartbeat { 0%,100% { transform: scale(1); } 15% { transform: scale(1.18); } 30% { transform: scale(1); } 45% { transform: scale(1.12); } }
+.counter { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 25px 0; }
+.counter span { min-width: 90px; border: 1px solid #ffb7d555; border-radius: 15px; padding: 13px; background: #ffffff0b; }
+.counter b { display: block; color: var(--pink); font-size: 25px; margin-bottom: 5px; }
+.counter small { color: #ded5f4; font: 11px Arial, sans-serif; }
+.secret { font-size: 18px; min-height: 90px; }
+footer { text-align: center; padding: 35px 15px 55px; color: #cfc3e9; font-size: 13px; }
+.float-heart { position: fixed; bottom: -35px; animation: floatUp linear forwards; z-index: 5; }
+@keyframes floatUp { to { transform: translateY(-115vh) rotate(28deg); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+<div id="hearts" aria-hidden="true"></div>
+<main>
+  <section class="hero">
+    <div class="moon">🌙 ✨</div>
+    <div class="eyebrow">a little birthday surprise · made with love</div>
+    <h1>Happy Birthday,<br>Aa Pangeran Kecilku 💗</h1>
+    <p>
+      Untuk Aa Pangeran kecilkuuu sayangiuu capikuuuu 🫶🏻<br>
+      Hari ini adalah hari yang spesial, karena seseorang yang begitu berarti buat Neng
+      bertambah usia.
+    </p>
+    <button id="openBtn" onclick="openSurprise()">Buka hadiah kecil dari Neng 💌</button>
+    <div class="eyebrow" style="margin-top:22px">scroll pelan-pelan ya, sayang</div>
+  </section>
+
+  <section id="letterSection" class="hidden">
+    <div class="panel">
+      <div class="center big-heart">💗</div>
+      <h2 class="center">Untuk Pangeran kecilnya Neng</h2>
+      <p>Selamat ulang tahun, sayangkuuu. 🥹❤️</p>
+      <p>
+        Hari ini dunia merayakan seseorang yang luar biasa, dan Neng ikut bersyukur
+        karena semesta pernah mempertemukan Neng dengan Aa.
+      </p>
+      <p>
+        Nggak terasa ya, sayang… kita sudah berjalan bersama selama <b>3 tahun</b>.
+        Ada banyak cerita yang sudah kita lewati: tawa, rindu, salah paham, air mata,
+        dan momen-momen kecil yang mungkin sederhana, tapi selalu punya tempat di hati Neng.
+      </p>
+      <p>
+        Walaupun sekarang kita belum bisa selalu berdekatan, Neng tetap berharap
+        yang terbaik untuk Aa. Semoga Aa selalu sehat, hatinya tenang, rezekinya
+        dilancarkan, pekerjaannya dimudahkan, dan semua cita-cita yang Aa simpan
+        pelan-pelan jadi nyata.
+      </p>
+      <p>
+        Neng mungkin belum bisa hadir di samping Aa hari ini untuk memeluk Aa langsung,
+        meniup lilin bersama, atau menggenggam tangan Aa sambil bilang “selamat ulang tahun”.
+        Jadi untuk sekarang, Neng titipkan peluk dan doa ini lewat halaman kecil yang
+        Neng buat khusus untuk Aa. 🫂
+      </p>
+      <p>
+        Terima kasih sudah menjadi bagian dari perjalanan Neng selama tiga tahun ini.
+        Semoga kita terus belajar memahami satu sama lain, menjaga hati, bertumbuh,
+        dan membuat lebih banyak kenangan baik bersama.
+      </p>
+      <p>
+        Dan semoga suatu hari nanti, ulang tahun Aa nggak lagi dirayakan lewat layar,
+        tapi Neng bisa ada di samping Aa secara langsung—bawa hadiah kecil, peluk Aa,
+        lalu bilang sendiri betapa berharganya Aa buat Neng. 💗
+      </p>
+      <p><b>I love you, today, tomorrow, and in all the little days after that.</b></p>
+      <div class="divider">♡ ✧ ♡</div>
+      <p class="center signature">Selamat ulang tahun, Aa Pangeran kecilkuuu sayangiuu capikuuuu 🫶🏻</p>
+      <p class="center signature">— Neng tercinta 💌</p>
+    </div>
+  </section>
+
+  <section id="secretSection" class="hidden">
+    <div class="panel center">
+      <div class="eyebrow">psst… ada satu pesan lagi</div>
+      <h2>Pesan rahasia dari Neng 🤍</h2>
+      <p id="secretText" class="secret">Kalau Aa sudah siap, pencet tombol ini yaa…</p>
+      <button onclick="revealSecret()">Buka pesan rahasia 🥺</button>
+    </div>
+  </section>
+
+  <section id="wishSection" class="hidden">
+    <div class="panel center">
+      <div class="big-heart">🎂 💗 🎂</div>
+      <h2>Satu harapan untuk kita</h2>
+      <p>
+        Semoga ulang tahun berikutnya membawa lebih banyak bahagia,
+        lebih banyak waktu bersama, dan lebih sedikit jarak di antara kita.
+        Sampai hari itu datang, jaga diri baik-baik ya, Pangeran kecilnya Neng.
+      </p>
+      <p class="signature">Sejauh apa pun jaraknya, kamu tetap punya tempat spesial di hati Neng. ♡</p>
+      <button onclick="makeHearts(35)">Kirim peluk virtual buat Aa 🫂</button>
+    </div>
+  </section>
+</main>
+<footer>
+  dibuat dengan banyak cinta oleh Neng tercinta ♡<br>
+  khusus untuk Aa Pangeran kecilku · 3 years and counting
+</footer>
+<script>
+function openSurprise() {
+  document.getElementById('openBtn').classList.add('hidden');
+  ['letterSection', 'secretSection', 'wishSection'].forEach(id =>
+    document.getElementById(id).classList.remove('hidden')
+  );
+  makeHearts(24);
+  document.getElementById('letterSection').scrollIntoView({ behavior: 'smooth' });
+}
+const messages = [
+  'Aa, kalau suatu hari Aa capek, semoga Aa ingat ada seseorang yang selalu mendoakan Aa dari jauh. 🤍',
+  'Neng nggak bisa menjanjikan semua hari akan mudah, tapi Neng berharap kita selalu punya alasan untuk saling memahami dan memperbaiki. 🫶🏻',
+  'Makasih sudah hadir di cerita Neng. Semoga banyak ulang tahun berikutnya yang bisa kita rayakan bersama, bukan cuma lewat layar. 💗'
+];
+let messageIndex = 0;
+function revealSecret() {
+  const el = document.getElementById('secretText');
+  el.textContent = messages[messageIndex % messages.length];
+  messageIndex++;
+  makeHearts(9);
+}
+function makeHearts(amount) {
+  const icons = ['💗', '💕', '❤️', '✨', '🫶🏻'];
+  for (let i = 0; i < amount; i++) {
+    setTimeout(() => {
+      const heart = document.createElement('span');
+      heart.className = 'float-heart';
+      heart.textContent = icons[Math.floor(Math.random() * icons.length)];
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (18 + Math.random() * 18) + 'px';
+      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 8500);
+    }, i * 90);
+  }
+}
+</script>
+</body>
+</html>
